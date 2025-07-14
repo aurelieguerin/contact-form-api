@@ -16,6 +16,9 @@ venv.bak/
 # AWS SAM build artifacts
 .aws-sam/
 
+# AWS SAM configuration file
+samconfig.toml
+
 # Virtual environments
 .venv/
 
