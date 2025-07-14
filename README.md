@@ -28,7 +28,16 @@ Client → API Gateway → Lambda Function → DynamoDB
 
 ## Project Structure
 
-```text . ├── contact_handler/ │ ├── __init__.py │ └── app.py ├── template.yaml ├── .gitignore ├── README.md └── LICENSE ```  
+```text
+.
+├── contact_handler/
+│   ├── __init__.py
+│   └── app.py
+├── template.yaml
+├── .gitignore
+├── README.md
+└── LICENSE
+```  
 
 ---
 
@@ -73,6 +82,18 @@ sam deploy --guided
 ```
 
 Follow the prompts. AWS SAM will package and deploy the Lambda function, API Gateway, and DynamoDB table. The deployed API endpoint will be displayed at the end of the process.
+
+---
+
+## Future Improvements
+- Add email validation using regex to improve input quality
+- Implement unit tests for the Lambda function to ensure reliability
+- Store form submissions in Amazon S3 as a backup solution
+- Configure CORS to enable frontend integration
+- Add basic logging to Lambda for better monitoring and debugging
+- Develop a simple static frontend hosted on S3 to submit the contact form
+
+---
 
 ## License
 This project is licensed under the [MIT License](LICENSE).
