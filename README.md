@@ -1,4 +1,4 @@
-# Contact Form API (AWS Lambda + API Gateway + DynamoDB)
+# Contact Form API 
 
 This project is a serverless backend API for processing contact form submissions. It is built with:
 
@@ -28,14 +28,7 @@ Client → API Gateway → Lambda Function → DynamoDB
 
 ## Project Structure
 
-.
-├── contact_handler/
-│ ├── init.py
-│ └── app.py 
-├── template.yaml 
-├── .gitignore
-├── README.md
-└── LICENSE   
+<pre> ```text . ├── contact_handler/ │ ├── __init__.py │ └── app.py ├── template.yaml ├── .gitignore ├── README.md └── LICENSE ``` </pre>   
 
 ---
 
@@ -56,6 +49,7 @@ To run and deploy this project, you need:
 ```bash
 git clone https://github.com/your-username/contact-form-api.git
 cd contact-form-api
+```
 
 ### 2. Create a virtual environment
 python -m venv .venv
