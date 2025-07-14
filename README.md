@@ -28,7 +28,7 @@ Client → API Gateway → Lambda Function → DynamoDB
 
 ## Project Structure
 
-<pre> ```text . ├── contact_handler/ │ ├── __init__.py │ └── app.py ├── template.yaml ├── .gitignore ├── README.md └── LICENSE ``` </pre>   
+```text . ├── contact_handler/ │ ├── __init__.py │ └── app.py ├── template.yaml ├── .gitignore ├── README.md └── LICENSE ```  
 
 ---
 
@@ -52,21 +52,29 @@ cd contact-form-api
 ```
 
 ### 2. Create a virtual environment
+```bash
 python -m venv .venv
 .venv\Scripts\activate   # On Windows
+```
 
 ### 3. Install dependencies
+```bash
 pip install boto3
+```
 
 ### 4. Build the application
+```bash
 sam build
+```
 
 ### 5. Deploy to AWS
+```bash
 sam deploy --guided
+```
 
 Follow the prompts. AWS SAM will package and deploy the Lambda function, API Gateway, and DynamoDB table. The deployed API endpoint will be displayed at the end of the process.
 
-License
+## License
 This project is licensed under the [MIT License](LICENSE).
 
 
