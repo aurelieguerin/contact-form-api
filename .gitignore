@@ -1,0 +1,29 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+*.egg
+*.so
+.Python
+.env
+.venv
+venv/
+ENV/
+env/
+env.bak/
+venv.bak/
+
+# AWS SAM build artifacts
+.aws-sam/
+
+# Virtual environments
+.venv/
+
+# VS Code
+.vscode/
+.history/
+
+# OS-specific
+Thumbs.db
+Desktop.ini
+.DS_Store
