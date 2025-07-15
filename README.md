@@ -92,7 +92,9 @@ Follow the prompts. AWS SAM will package and deploy the Lambda function, API Gat
 ### Method: POST
 
 #### URL:
-https://your-api-url.execute-api.<region>.amazonaws.com/Prod/form
+```text 
+https://kevk5pd6f4.execute-api.eu-west-3.amazonaws.com/Prod/form
+```
 
 #### Headers:
 ```bash
