@@ -33,9 +33,11 @@ Client → API Gateway → Lambda Function → DynamoDB
 ├── contact_handler/
 │   ├── __init__.py
 │   └── app.py
+├── events/ 
+├── tests/ 
 ├── template.yaml
-├── .gitignore
 ├── README.md
+├── .gitignore
 └── LICENSE
 ```  
 
@@ -85,6 +87,36 @@ Follow the prompts. AWS SAM will package and deploy the Lambda function, API Gat
 
 ---
 
+## Example API Request
+
+### Method: POST
+
+#### URL:
+https://your-api-url.execute-api.<region>.amazonaws.com/Prod/form
+
+#### Headers:
+```bash
+Content-Type: application/json
+```
+
+#### Body (JSON):
+```bash
+{
+  "name": "John Doe",
+  "email": "john@example.com",
+  "message": "Hello, this is a test message."
+}
+```
+
+#### Successful Response:
+```bash
+{
+  "message": "Message received successfully!"
+}
+```
+
+---
+
 ## Future Improvements
 - Add email validation using regex to improve input quality
 - Implement unit tests for the Lambda function to ensure reliability
@@ -97,8 +129,3 @@ Follow the prompts. AWS SAM will package and deploy the Lambda function, API Gat
 
 ## License
 This project is licensed under the [MIT License](LICENSE).
-
-
-
-
-
