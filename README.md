@@ -110,10 +110,26 @@ Content-Type: application/json
 }
 ```
 
-#### Successful Response:
+#### Response:
+
+- Success (200 OK):
 ```bash
 {
   "message": "Message received successfully!"
+}
+```
+
+- Error (400 Bad Request):
+```bash
+{
+  "error": "Missing name, email, or message"
+}
+```
+
+- Error (500 Internal Server Error):
+```bash
+{
+  "error": "Error message details"
 }
 ```
 
